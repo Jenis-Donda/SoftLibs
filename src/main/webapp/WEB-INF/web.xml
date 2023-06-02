@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://JAVA.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <servlet>
+  		<servlet-name>spring</servlet-name>
+  		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  		<servlet-name>spring</servlet-name>
+  		<url-pattern>/</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  		<servlet-name>verify</servlet-name>
+  		<servlet-class>com.models.VerifyUser</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  		<servlet-name>verify</servlet-name>
+  		<url-pattern>/verifyuser</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  		<servlet-name>register</servlet-name>
+  		<servlet-class>com.models.RegisterUser</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  		<servlet-name>register</servlet-name>
+  		<url-pattern>/registeruser</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  		<servlet-name>pay</servlet-name>
+  		<servlet-class>com.models.Payment</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  		<servlet-name>pay</servlet-name>
+  		<url-pattern>/pay</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+</web-app>
